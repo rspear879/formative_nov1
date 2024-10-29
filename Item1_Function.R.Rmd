@@ -1,0 +1,35 @@
+---
+title: "MY472: Exercise 1"
+author: "LSE Candidate Number: 201420265"
+date: "Autumn Term 2024"
+output: html_document
+---
+
+```{r setup, include=FALSE} 
+# this chunk contains code that sets global options for the entire .Rmd. 
+# we use include=FALSE to suppress it from the top of the document, but it will still appear in the appendix. 
+
+knitr::opts_chunk$set(echo = FALSE) # actually set the global chunk options. 
+# we set echo=FALSE to suppress code such that it by default does not appear throughout the document. 
+# note: this is different from .Rmd default
+```
+
+```{r echo_example, echo=TRUE}
+# Single function with 'data' argument
+
+# Leverage built-in mtcars dataset
+data <- mtcars$cyl
+
+# Function 'fn' doubles the cyl (cylinder count) column of mtcars which is stored in 'data'
+fn <- function(d){
+
+  return(2*d)
+  
+}
+
+fn(data)
+```
+
+
+
+
