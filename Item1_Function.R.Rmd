@@ -30,9 +30,9 @@ fn <- function(data){
 fn(d)
 
 # Function 'fn2' triples the cyl (cylinder count) column of mtcars which is stored in 'data'
-fn2 <- function(data){
+fn2 <- function(data_new){
 
-  return(3*data)
+  return(3*data_new)
   
 }
 
