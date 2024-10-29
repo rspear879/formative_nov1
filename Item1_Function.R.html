@@ -359,18 +359,28 @@ display: none;
 <pre class="r"><code># Single function with &#39;data&#39; argument
 
 # Leverage built-in mtcars dataset
-data &lt;- mtcars$cyl
+d &lt;- mtcars$cyl
 
 # Function &#39;fn&#39; doubles the cyl (cylinder count) column of mtcars which is stored in &#39;data&#39;
-fn &lt;- function(d){
+fn &lt;- function(data){
 
-  return(2*d)
+  return(2*data)
   
 }
 
-fn(data)</code></pre>
+fn(d)</code></pre>
 <pre><code>##  [1] 12 12  8 12 16 12 16  8  8 12 12 16 16 16 16 16 16  8  8  8  8 16 16 16 16
 ## [26]  8  8  8 16 12 16  8</code></pre>
+<pre class="r"><code># Function &#39;fn2&#39; triples the cyl (cylinder count) column of mtcars which is stored in &#39;data&#39;
+fn2 &lt;- function(data){
+
+  return(3*data)
+  
+}
+
+fn2(d)</code></pre>
+<pre><code>##  [1] 18 18 12 18 24 18 24 12 12 18 18 24 24 24 24 24 24 12 12 12 12 24 24 24 24
+## [26] 12 12 12 24 18 24 12</code></pre>
 
 
 

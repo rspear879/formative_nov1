@@ -18,16 +18,25 @@ knitr::opts_chunk$set(echo = FALSE) # actually set the global chunk options.
 # Single function with 'data' argument
 
 # Leverage built-in mtcars dataset
-data <- mtcars$cyl
+d <- mtcars$cyl
 
 # Function 'fn' doubles the cyl (cylinder count) column of mtcars which is stored in 'data'
-fn <- function(d){
+fn <- function(data){
 
-  return(2*d)
+  return(2*data)
   
 }
 
-fn(data)
+fn(d)
+
+# Function 'fn2' triples the cyl (cylinder count) column of mtcars which is stored in 'data'
+fn2 <- function(data){
+
+  return(3*data)
+  
+}
+
+fn2(d)
 ```
 
 
